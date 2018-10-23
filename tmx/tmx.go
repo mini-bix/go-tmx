@@ -99,6 +99,7 @@ type Image struct {
 type Tile struct {
 	ID    ID    `xml:"id,attr"`
 	Image Image `xml:"image"`
+	Properties []Property `xml:"properties>property"`
 }
 
 type Layer struct {
